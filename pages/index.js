@@ -14,17 +14,17 @@ export async function getStaticProps() {
   }
 }
 
-export default function Home({allPostsData}) {
+export default function Home({ allPostsData }) {
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>[Your Self Introduction]</p>
+
         <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
+          I finished the Next.js tutorial and deployed on Vercel!
+          <a href="https://github.com/prophen/nextjs-blog"> GitHub repo here</a>.
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
@@ -38,7 +38,7 @@ export default function Home({allPostsData}) {
               <br />
               <small className={utilStyles.lightText}>
                 <Date dateString={date} />
-                </small>
+              </small>
             </li>
           ))}
         </ul>
